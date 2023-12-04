@@ -9,7 +9,8 @@ The VIM Emulator is a simple extension for Visual Studio Code that brings VIM-li
 ## Features
 
 - **VIM Command Input**: Access VIM commands through a dedicated input box.
-### Commands:
+### Supported Commands:
+```
 - :w - Save file
 - :wq - Save file and quit
 - :qa - Close all files
@@ -27,6 +28,7 @@ The VIM Emulator is a simple extension for Visual Studio Code that brings VIM-li
 - dd - Delete current line
 - vaw - Select word visually
 - u - undo
+```
 - **Redo Functionality**: Easily redo actions using the VIM Emulator extension.
 - **Open Command Palette**: Quickly open the VS Code command palette with a VIM-style command.
 
