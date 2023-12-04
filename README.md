@@ -27,8 +27,7 @@ The VIM Emulator is a simple extension for Visual Studio Code that brings VIM-li
 
 ## Author
 
-**Your Full Name**
-- Group: Your Group Number
+**M3108 Kozlenko Ivan Denisovich**
 
 ## License
 
