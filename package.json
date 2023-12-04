@@ -1,0 +1,63 @@
+{
+"name": "vim-emulator",
+"displayName": "VIM Emulator",
+"description": "A simple VIM emulator for VS Code",
+"icon": "icon.png",
+"publisher": "Mixturka",
+"author": {
+  "name": "Mixturka"
+},
+"repository": {
+  "type": "git",
+  "url": "https://github.com/Mixturka/VIM-Emulator-for-VS-Code.git"
+},
+"version": "0.0.1",
+"engines": {
+"vscode": "^1.58.0"
+},
+"categories": ["Other"],
+"activationEvents": [
+"onCommand:extension.vimEmulator",
+"onCommand:extension.vimEmulator.openCommandPalette",
+"onCommand:extension.vimEmulator.onEscapePressed"
+],
+"main": "./out/extension.js",
+"contributes": {
+"commands": [
+{
+"command": "extension.vimEmulator",
+"title": "VIM Emulator"
+},
+{
+"command": "extension.vimEmulator.openCommandPalette",
+"title": "Open Command Palette"
+},
+{
+"command": "extension.vimEmulator.onEscapePressed",
+"title": "On Escape Pressed"
+}
+],
+"keybindings": [
+{
+"command": "extension.vimEmulator",
+"key": "escape",
+"when": "editorTextFocus"
+}
+]
+},
+"scripts": {
+"vscode:prepublish": "tsc -p ./",
+"compile": "tsc -watch -p ./",
+"test": "node ./out/test/runTest.js"
+},
+"devDependencies": {
+"@types/glob": "^8.1.0",
+"@types/mocha": "^10.0.6",
+"@types/node": "^20.10.3",
+"@types/vscode": "^1.58.0",
+"@vscode/test-electron": "^2.3.8",
+"mocha": "^10.2.0",
+"typescript": "^4.5.5"
+},
+"private": true
+}
