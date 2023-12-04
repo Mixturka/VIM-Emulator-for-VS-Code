@@ -45,7 +45,7 @@ Download ***vim-emulator-0.0.1.vsix*** file from github and install extension fr
 
 ## Usage
 
-- Open the command palette: Press `Escape` in the editor or use the dedicated command (`Ctrl+R` to redo).
+- Open the command palette: Press `Escape` in the editor or use the dedicated command
 - Enter VIM commands in the provided input box.
 
 ## Author
