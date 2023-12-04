@@ -40,6 +40,9 @@ The VIM Emulator is a simple extension for Visual Studio Code that brings VIM-li
 4. Click "Install" to install the extension.
 5. Reload VS Code to activate the extension.
 
+**OR**
+Download ***vim-emulator-0.0.1.vsix*** file from github and install extension from VSIX file in VS Code.
+
 ## Usage
 
 - Open the command palette: Press `Escape` in the editor or use the dedicated command (`Ctrl+R` to redo).
