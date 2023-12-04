@@ -60,10 +60,6 @@ This extension is licensed under the [MIT License](LICENSE).
 
 If you encounter any issues or have suggestions for improvements, please [open an issue](link-to-issues) on GitHub. Contributions are welcome!
 
-## Acknowledgments
-
-Special thanks to [contributors' names] for their valuable contributions.
-
 ---
 
 **Enjoy your VIM experience in Visual Studio Code!**
