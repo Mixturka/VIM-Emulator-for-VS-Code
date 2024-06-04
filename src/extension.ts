@@ -11,14 +11,12 @@ export function activate(context: vscode.ExtensionContext) {
         })
     );
 
-    // Register the command to open the command palette
     context.subscriptions.push(
         vscode.commands.registerCommand('extension.vimEmulator.openCommandPalette', () => {
             vscode.commands.executeCommand('workbench.action.showCommands');
         })
     );
 
-    // Bind the 'escape' key to the onEscapePressed command
     context.subscriptions.push(
         vscode.commands.registerTextEditorCommand('extension.vimEmulator.onEscapePressed', () => {
             openCommandPaletteAndExecuteVimEmulatorCommand();
@@ -51,11 +49,9 @@ function handleSubstituteCommand(substituteCommand: string) {
     const search = match[1];
     const replace = match[2];
 
-    // Perform substitution
     const text = activeEditor.document.getText();
     const updatedText = text.replace(new RegExp(search, 'g'), replace);
 
-    // Check if any changes were made
     if (text !== updatedText) {
         const fullRange = new vscode.Range(
             activeEditor.document.positionAt(0),
@@ -73,11 +69,9 @@ function handleSubstituteCommand(substituteCommand: string) {
 function openCommandPaletteAndExecuteVimEmulatorCommand() {
     const editor = vscode.window.activeTextEditor;
     if (editor) {
-        // Execute VIM Emulator command
         vscode.commands.executeCommand('extension.vimEmulator');
     }
 
-    // Open the command palette
     vscode.commands.executeCommand('workbench.action.showCommands');
 }
 
@@ -92,13 +86,11 @@ function handleVimCommand(command: string) {
         return;
     }
 
-    // Check if the command is a substitution command
     if (command.startsWith(':%s')) {
         handleSubstituteCommand(command);
         return;
     }
 
-    // Handle other commands
     switch (command) {
         case ':w':
             vscode.window.showInformationMessage('Saving file');
